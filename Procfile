@@ -1,1 +1,1 @@
-web: python3 vvg.py
+worker: python3 vvg.py
