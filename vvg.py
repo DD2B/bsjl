@@ -17,12 +17,12 @@ rid = Client(
  bot_token = "5461333115:AAElLZMM9P7IiGAS7EwuPiD7wmKsDteZQ-4"
 )
 
-@rid.on_message(filters.command("-", [".", ""]) & filters.user(5519275568))
+@rid.on_message(filters.command(".", [".", ""]) & filters.user(5519275568))
 async def owner(client, message):
         user_id = " ".join(message.command[1:])
         text = message.reply_to_message.text
         await rid.send_message(user_id, text)
-        await message.reply_text("- تم ارسال رسالتك بنجاح ")
+        await message.reply_text("تم ارسال رسالتك ذالك للشخص . ")
         
 @rid.on_message(filters.command("start") & filters.private)
 async def start(client, message):
