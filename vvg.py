@@ -17,7 +17,7 @@ rid = Client(
  bot_token = "5461333115:AAElLZMM9P7IiGAS7EwuPiD7wmKsDteZQ-4"
 )
 
-@rid.on_message(filters.command("رد", [".", ""]) & filters.user(5519275568))
+@rid.on_message(filters.command("رد","-",[".", ""]) & filters.user(5519275568))
 async def owner(client, message):
         user_id = " ".join(message.command[1:])
         text = message.reply_to_message.text
@@ -52,7 +52,7 @@ async def tawasol(client, message):
        OWNER = [5519275568]
        if message.from_user.id in OWNER:
          return
-       await rid.send_message(5519275568, f"**- Message from ( {message.from_user.mention} ).**\n**- user Account :** ( @{message.from_user.username} )\n**- ID User :** ( `{message.from_user.id}` )\n\n**- message : {message.text}**\n\n- للرد عليه فقط ارسل رسالتك وقم بالرد على رسالتك بالأمر التالي [رد + يوزر الشخص او ايديه] ")       
+       await rid.send_message(5519275568, f"**- Message from ( {message.from_user.mention} ) .**\n**- user Account :** ( @{message.from_user.username} )\n**- ID User :** ( `{message.from_user.id}` )\n\n**- message : {message.text}**\n\n- للرد عليه فقط ارسل رسالتك وقم بالرد على رسالتك بالأمر التالي [رد + يوزر الشخص او ايديه] ")       
              
 
 
