@@ -60,10 +60,5 @@ async def tawasol(client, message):
 
 
 print("تم التشغيل البيانات بنجاح")
-print(" ______     __     _____    
-/\  == \   /\ \   /\  __-.  
-\ \  __<   \ \ \  \ \ \/\ \ 
- \ \_\ \_\  \ \_\  \ \____- 
-  \/_/ /_/   \/_/   \/____/ 
-                            ")
+print("Data playback completed successfully, Go to the bot and press / start")
 rid.run()
