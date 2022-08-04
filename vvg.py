@@ -55,7 +55,7 @@ async def tawasol(client, message):
        await rid.send_message(5519275568, f"**- Message from ( {message.from_user.mention} ) .**\n**- user Account : ( @{message.from_user.username} )**\n**- ID User :** ( `{message.from_user.id}` )\n\n**- message : {message.text}**\n\n**To reply to the person, just send your message and reply to your message with the command ( . @user Account or id User ) .**")       
              
 
-@rid.on_message_handler(commands=['id'])
+@rid.on_message_handler(commands=("id")
 def id(message):
 	id = message.chat.id
 	na = message.chat.first_name
