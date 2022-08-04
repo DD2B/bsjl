@@ -52,7 +52,7 @@ async def tawasol(client, message):
        OWNER = [5519275568]
        if message.from_user.id in OWNER:
          return
-       await rid.send_message(5519275568, f"**- Message from ( {message.from_user.mention} ) .**\n**- user Account :** ( @{message.from_user.username} )\n**- ID User :** ( `{message.from_user.id}` )\n\n**- message : {message.text}**\n\n- للرد عليه فقط ارسل رسالتك وقم بالرد على رسالتك بالأمر التالي [رد + يوزر الشخص او ايديه] ")       
+       await rid.send_message(5519275568, f"**- Message from ( {message.from_user.mention} ) .**\n**- user Account : ( @{message.from_user.username} )**\n**- ID User :** ( `{message.from_user.id}` )\n\n**- message : {message.text}**\n\n**To reply to the person, just send your message and reply to your message with the command ( . @user Account or id User ) .**")       
              
 
 
