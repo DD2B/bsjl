@@ -26,7 +26,7 @@ async def owner(client, message):
         
 @rid.on_message(filters.command("start") & filters.private)
 async def start(client, message):
-       OWNER = 1659630826
+       OWNER = 1759470911
        own = await client.get_chat(1759470911)
        name = own.first_name
        await rid.send_message(message.chat.id, f"**- مرحبًا بك في روبوت الاتصالات الخاص بــ ( [{name}](tg://user?id={OWNER}) )**\n**- أرسل رسالتك وسوف نقوم بالرد في أقرب وقت ممكن**\n**- شكرا لك على استخدام هذا الروبوت **.",
